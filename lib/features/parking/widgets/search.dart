@@ -5,22 +5,31 @@ class Search extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column( 
-      children: <Widget> [ 
-        Container( 
-          margin: EdgeInsets.all(20), 
-          height: 50, 
-          width: 450, 
-          child:
-          TextField( 
-            decoration: InputDecoration( 
-              hintText: 'Where do you want to park?',
-              contentPadding: EdgeInsets.all(20),
-                suffixIcon: Icon(Icons.map, color: Color.fromARGB(255, 220, 182, 11),
-          ),)
-          )
-        )
-      
-       ] );
+    return Card( 
+      elevation: 0,
+      child: Container( 
+        padding: EdgeInsets.all(20),
+        child: Column( 
+          children: [ 
+            Row( 
+              children: [ 
+                Expanded(child: TextField( 
+                  decoration: InputDecoration( 
+                    labelText: "Where do you want to park",
+                    border: OutlineInputBorder(
+                      borderSide: const BorderSide( color: Color.fromARGB(255, 226, 180, 30),), 
+                      borderRadius: BorderRadius.circular(5)
+                    ),
+                     
+                    suffixIcon: Icon(Icons.map, 
+                    color: Color.fromARGB(255, 209, 191, 25))
+                  ),
+                ))
+              ],
+            )
+          ],
+        ),
+      ),
+    );
   }
 }

@@ -6,47 +6,69 @@ class Location extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Column(
+    return Container(
+      child: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
           children: [
-            Row(
-              children: [ 
-                Column( 
-                  children: [ 
-                    Container( 
-                      height: 40, 
-                      width: 30,
-                      decoration: BoxDecoration( 
-                        image: DecorationImage(image: AssetImage('mpk.png')),
-                      ),
-                    ),
-                    Container( 
-                      child: Text('Majlid Perbandaran Petaling Jaya', 
-                      style: TextStyle( fontSize: 10, color: Colors.black),)
-                    ),
-                    Expanded(
-                      flex: 2, 
-                      child: Container( 
-                        color: Colors.white)),
-                    Container( 
-                      child: IconButton(icon: Icon(Icons.arrow_forward), 
-                      onPressed: () { 
-                        Navigator.push(context, MaterialPageRoute 
-                        (builder: (context) => PaymentScreen()), 
-                        );
-                      },
-                    )
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Align(alignment: Alignment.topLeft, child: Text("Near by Parking", 
+              style: TextStyle( 
+                decoration: TextDecoration.none, fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black
+              ),),),
+            ),
+            Container(
+              width: 500,
+              child: Card(
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                    children: <Widget>[
+                      Image.asset('assets/mpk.png', height: 70.0, width: 80.0),
+                        Row(
+                          children: [
+                            Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,    
+                                children: [
+                                  Text('Majlis Perbandaran Kajang', style: TextStyle(fontWeight: FontWeight.bold)),
+                                  SizedBox(height: 10),
+                                  Text('3 parking area',style: TextStyle(fontSize: 12.0)),
+                                  ],
+                              ),
+                              ],
+                   ),
+                   Expanded(child:Container( 
+                     color: Colors.transparent, height: 10)), 
+
+                     Container(child: IconButton( 
+                       icon: Icon(Icons.arrow_forward_ios), 
+                       onPressed: () { 
+                         Navigator.push(context, MaterialPageRoute
+                         (builder: (context) =>  PaymentScreen()));
+                       }),)
                   
-                )
-                  ]
+        ],
+      ),
+                ),
+              ),
             ),
           ],
         ),
-      ],
-        ) 
-      ]
+      ),
     );
-      
   }
 }
+
+/*  Column( 
+                    mainAxisAlignment:MainAxisAlignment.end,
+                    children: [ 
+                      IconButton(
+                        icon: Icon(Icons.arrow_forward), 
+                        onPressed: () { 
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => PaymentScreen()));
+
+                        }) 
+
+                        */
