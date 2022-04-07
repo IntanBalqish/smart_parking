@@ -2,9 +2,11 @@ import 'package:flutter/material.dart';
 
 AppBar app_bar_payment ({String title = ''}) { 
 
-  return AppBar( 
+return AppBar( 
     backgroundColor: Colors.white, 
-    title: Text(' Payment '), 
+    centerTitle: true,
+    elevation: 0,
+    title: Text('Payment'), 
     titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
     leading: IconButton(  
       icon: Icon(Icons.arrow_back_ios_new_outlined, 

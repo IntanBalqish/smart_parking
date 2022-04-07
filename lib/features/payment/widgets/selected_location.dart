@@ -5,30 +5,27 @@ class SelectedLocation extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column( 
-          children: [
-            Column(
-              children: [
-                Row( 
-                  children: [ 
-                    Column(
-                      children: [
-                        Container( 
-                          padding: EdgeInsets.all(20),
-                          child: Image.asset('mpk.png', 
-                          height: 50,),
-                          ),
-                      ],
-                    ),
-                    Container( 
-                      child: Text('Majlis Perbandaran Petaling Jaya', 
-                      style: TextStyle( fontSize: 10, color: Colors.black),),
-                    )
+    return Padding(
+      padding: const EdgeInsets.all(30.0),
+      child: Container(
+           
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ 
+            Image.asset('assets/mbpj.png', height: 50.0, width: 50.0),
+            SizedBox(width: 25),
+              Card(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text('Majlis Bandaraya Petaling', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
+                     Text('Jaya', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15)),
                   ],
                 ),
-              ],
-            )
-          ],
+              ),   
+          ]),
+        
+      ),
     );
   }
 }
