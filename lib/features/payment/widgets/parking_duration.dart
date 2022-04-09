@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+
 class ParkingDuration extends StatelessWidget {
   const ParkingDuration({Key? key}) : super(key: key);
 
@@ -16,6 +17,11 @@ class ParkingDuration extends StatelessWidget {
                 Text('Parking Duration',
                     style:
                         TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black)),
+                SizedBox(width: 80),
+                Text('RM0.40 per hour)',
+                    style:
+                        TextStyle(fontWeight: FontWeight.bold, fontSize: 10, color: Colors.black)),
+                SizedBox(height: 30),
               ],
             ),
             Row(
@@ -34,7 +40,45 @@ class ParkingDuration extends StatelessWidget {
                     onPressed: () {},
                   ),
                 ),
-               
+                Container(
+                  child: FlatButton(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        '2 hours',
+                        style: TextStyle(fontSize: 12.0),
+                      ),
+                    ),
+                    color: Color.fromARGB(255, 218, 218, 218),
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  child: FlatButton(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        '3 hours',
+                        style: TextStyle(fontSize: 12.0),
+                      ),
+                    ),
+                    color: Color.fromARGB(255, 218, 218, 218),
+                    onPressed: () {},
+                  ),
+                ),
+                Container(
+                  child: FlatButton(
+                    child: Padding(
+                      padding: const EdgeInsets.all(10.0),
+                      child: Text(
+                        'Custom',
+                        style: TextStyle(fontSize: 12.0),
+                      ),
+                    ),
+                    color: Color.fromARGB(255, 231, 211, 30),
+                    onPressed: () {},
+                  ),
+                ),
                 SizedBox(height: 70),
               ],
             ),
@@ -99,7 +143,7 @@ class ParkingDuration extends StatelessWidget {
                 
               ],
             ),
-            Padding(padding: const EdgeInsets.all(50.0),
+            Padding(padding: const EdgeInsets.all(20.0),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [  
@@ -123,7 +167,7 @@ class ParkingDuration extends StatelessWidget {
                         child: Column(
                           children: <Widget>[
                             Divider(
-                              height: 100.0,
+                              height: 50.0,
                               thickness: 2,
                               color: Color.fromARGB(255, 207, 206, 206)
                             )

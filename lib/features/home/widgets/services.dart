@@ -40,7 +40,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/officer.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('Officer'),
@@ -55,7 +55,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/assist.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('Roadside'),
@@ -64,7 +64,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/chatbot.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('Chatbot'),
@@ -79,7 +79,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/mbpp.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('MBPP'),
@@ -88,7 +88,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/insurance.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('Car'),
@@ -103,7 +103,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/parking.png'),
+                      AssetImage('assets/wallet.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('E-Wallet'),
@@ -112,7 +112,7 @@ class Services extends StatelessWidget {
                   CircleAvatar(
                     radius: 20.0,
                     backgroundImage:
-                      AssetImage('assets/bbb.png'),
+                      AssetImage('assets/more.png'),
                         backgroundColor: Colors.transparent,
                   ),
                   Text('More'),

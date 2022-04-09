@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_parking/features/payment/widgets/app_bar_payment.dart';
+import 'package:smart_parking/features/payment/widgets/bottom_bar.dart';
 import 'package:smart_parking/features/payment/widgets/promo_code.dart';
 import 'package:smart_parking/features/payment/widgets/selected_location.dart';
 import 'package:smart_parking/features/payment/widgets/parking_duration.dart';
@@ -23,7 +24,8 @@ class _PaymentScreenState extends State<PaymentScreen> {
                //SelectedLocation(),
                //ParkingDuration(),
                Vehicle(),
-               //PromoCode(),
+               PromoCode(),
+               bottomNavigationBar(),
              ],
            )), 
        

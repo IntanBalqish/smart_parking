@@ -11,20 +11,20 @@ class Location1 extends StatelessWidget {
       child: Column(
         children: [
           Container(
-            width: 500,
-            child: Card(
+            width: 500, 
+            child: Card( 
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Row(
                 mainAxisSize: MainAxisSize.min,
                   children: <Widget>[
-                    Image.asset('assets/mpk.png', height: 70, width: 80),
+                    Image.asset('assets/mbpj.png', height: 70, width: 80),
                       Row(
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,    
                               children: [
-                                Text('Majlis Perbandaran Shah Alam', style: TextStyle(fontWeight: FontWeight.bold)),
+                                Text('Majlis Perbandaran Petaling Jaya', style: TextStyle(fontWeight: FontWeight.bold)),
                                 SizedBox(height: 10),
                                 Text('3 parking area',style: TextStyle(fontSize: 12.0)),
                                 ],
