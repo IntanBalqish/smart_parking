@@ -20,7 +20,7 @@ class _PaymentScreenState extends State<PaymentScreen> {
         Container(
            child: Column(
              children: [
-               app_bar_payment(),
+               app_bar_payment(context),
                //SelectedLocation(),
                //ParkingDuration(),
                Vehicle(),
