@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:smart_parking/features/home/widgets/reward.dart';
-import 'package:smart_parking/features/home/widgets/wallet.dart';
+import 'package:smart_parking/features/home/widgets/wallet_amt.dart';
 
 class WalletReward extends StatelessWidget {
 
@@ -13,7 +13,6 @@ class WalletReward extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [ 
                     Wallet(),
-                   
                     Reward()
                   ],
                 ),])

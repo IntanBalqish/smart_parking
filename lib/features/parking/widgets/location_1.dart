@@ -38,7 +38,8 @@ class Location1 extends StatelessWidget {
                      icon: Icon(Icons.arrow_forward_ios,),
                      onPressed: () { 
                        Navigator.push(context, MaterialPageRoute
-                       (builder: (context) => PaymentScreen())); 
+                       (builder: (context) => PaymentScreen())
+                       ); 
                      },
                    ),)
                 
@@ -52,3 +53,4 @@ class Location1 extends StatelessWidget {
     );
   }
 }
+

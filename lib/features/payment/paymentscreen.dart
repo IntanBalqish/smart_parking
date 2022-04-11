@@ -15,22 +15,23 @@ class PaymentScreen extends StatefulWidget {
 class _PaymentScreenState extends State<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [ 
-        Container(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Scaffold(
+        body:Container(
            child: Column(
              children: [
                app_bar_payment(context),
-               //SelectedLocation(),
-               //ParkingDuration(),
+              SelectedLocation(),
+               ParkingDuration(),
                Vehicle(),
                PromoCode(),
-               bottomNavigationBar(),
+               
              ],
-           )), 
-       
-
-      ]
+            )
+          ),
+            bottomNavigationBar:bottomNavigationBar(),
+        ),
     );
   }
 }

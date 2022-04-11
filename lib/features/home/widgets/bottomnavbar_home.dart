@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-BottomNavigationBar bottomnavbar_home(){  
+BottomNavigationBar bottom_navbar_home(){  
    return BottomNavigationBar(
       type: BottomNavigationBarType.fixed,
               items: [

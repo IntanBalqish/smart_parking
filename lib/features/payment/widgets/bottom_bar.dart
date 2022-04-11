@@ -21,9 +21,15 @@ class bottomNavigationBar extends StatelessWidget {
           Column( 
             crossAxisAlignment: CrossAxisAlignment.start, 
             children: [ 
-              Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)), 
-              SizedBox(height: 5), 
-              Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),)
+              Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)),
+              ), 
+             
+              Padding(
+                padding: const EdgeInsets.all(4.0),
+                child: Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),),
+              )
             ],
           ), 
           SizedBox(width: 70),
@@ -33,13 +39,14 @@ class bottomNavigationBar extends StatelessWidget {
           Spacer(),
           Column( 
             children: [ 
-              Container( height: 50, width: 150, color: Colors.black,
+              GestureDetector( onTap: () { showAlertDialog(context); 
+              },
+              child: Container( height: 50, width: 150, color: Colors.black,
+              
                 child: Align( 
                   alignment: Alignment.center, 
-                  child: TextButton(child: Text('PAY', style: TextStyle(color: Colors.white)),
-                  onPressed: () { 
-                    showAlertDialog(context);
-                  },),
+                  child: Text('PAY', style: TextStyle(color: Colors.white)),
+                  ),
                 ),
               )
             ],
@@ -65,7 +72,7 @@ void showAlertDialog(BuildContext context) {
        (child: Text("Yes"), 
        onPressed: () { 
          Navigator.push(context, 
-         MaterialPageRoute(builder: (context) => const HomeScreen()));
+         MaterialPageRoute(builder: (context) => HomeScreen()));
         showSecond(context);
        }, 
        )
