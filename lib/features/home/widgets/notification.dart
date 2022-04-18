@@ -8,19 +8,20 @@ class Notify extends StatelessWidget {
     return Container(
       width: 485.0,  
       height: 200.0,
-      decoration: BoxDecoration(  
+      decoration: const BoxDecoration(  
         image: DecorationImage(    
           image: AssetImage("assets/news.png"),
           fit: BoxFit.fill
         )
       ),
 
-      child: new Row(
+      child: 
+       Row(
         mainAxisAlignment: MainAxisAlignment.end,
         children: <Widget> [
-          new Container(    
-               alignment: new FractionalOffset(1.0, 0.0),
-            child: Icon(Icons.cancel)
+          Container(    
+               alignment: const  FractionalOffset(1.0, 0.0),
+            child: const Icon(Icons.cancel)
           ),
         ],
       )

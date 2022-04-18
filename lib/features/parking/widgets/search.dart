@@ -9,7 +9,7 @@ class Search extends StatelessWidget {
       elevation: 0,
       color: Colors.transparent,
       child: Container( 
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column( 
           children: [ 
             Row( 
@@ -22,7 +22,7 @@ class Search extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5)
                     ),
                      
-                    suffixIcon: Icon(Icons.map, 
+                    suffixIcon: const Icon(Icons.map, 
                     color: Color.fromARGB(255, 209, 191, 25))
                   ),
                 ))

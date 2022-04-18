@@ -28,42 +28,42 @@ class _CounterButtonState extends State<CounterButton> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         
-        Text('Custom', style: TextStyle(fontSize: 12, color: Colors.black)),
+        const Text('Custom', style: TextStyle(fontSize: 12, color: Colors.black)),
         Row(
           children:<Widget> [  
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: Container(
                 height: 35.0,
-                color: Color.fromARGB(255, 218, 218, 218),
+                color:const  Color.fromARGB(255, 218, 218, 218),
                 child: FlatButton(
-                  child: Text('$_counter hours', style: TextStyle(fontSize: 12.0),),
+                  child: Text('$_counter hours', style: const  TextStyle(fontSize: 12.0),),
                   onPressed: () {},
                 ),
               ),
             ),
 
-            SizedBox(width: 15.0,),
+            const SizedBox(width: 15.0,),
 
             FloatingActionButton.small(
-              backgroundColor: Color.fromARGB(255, 148, 142, 142),
-              shape: RoundedRectangleBorder(   
+              backgroundColor: const Color.fromARGB(255, 148, 142, 142),
+              shape: const RoundedRectangleBorder(   
                 borderRadius: BorderRadius.all(Radius.circular(10.0))
               ),
               onPressed: increment,
-              child: Icon(Icons.add),
+              child:const  Icon(Icons.add),
               tooltip: 'Increment',                
             ),
 
-            SizedBox(width: 10.0,),
+            const SizedBox(width: 10.0,),
          
             FloatingActionButton.small(
-              backgroundColor: Color.fromARGB(255, 148, 142, 142),
-              shape: RoundedRectangleBorder(   
+              backgroundColor:const  Color.fromARGB(255, 148, 142, 142),
+              shape: const RoundedRectangleBorder(   
                 borderRadius: BorderRadius.all(Radius.circular(10.0))
               ),
               onPressed: decrement,
-              child: Icon(Icons.remove),
+              child: const Icon(Icons.remove),
               tooltip: 'Decrement',
             ),
           ],

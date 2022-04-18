@@ -6,13 +6,13 @@ return AppBar(
     backgroundColor: Colors.white, 
     centerTitle: true,
     elevation: 0,
-    title: Text('Payment'), 
-    titleTextStyle: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
+    title: const Text('Payment'), 
+    titleTextStyle: const TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 20),
     leading: GestureDetector( 
       child: IconButton(  
-      icon: Icon(Icons.arrow_back_ios_new_outlined, 
+      icon: const Icon(Icons.arrow_back_ios_new_outlined, 
       size: 20, 
-      color: Colors.lightBlue,),
+      color:  Colors.lightBlue,),
       onPressed: () {
         Navigator.pop(context);  
       },

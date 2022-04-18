@@ -18,16 +18,16 @@ class _ParkingScreenState extends State<ParkingScreen> {
     return Scaffold( 
       body: SafeArea(child: Column(
       children: [ 
-        Container(
-           child: Column(
-             children: [
-               app_bar_parking(context),
-               Search(), 
-               Maps(),
-               Location(),
-               Location1()
-             ],
-           )), 
+        Column(
+          children: [
+            app_bar_parking(context),
+            const Search(), 
+            const Maps(),
+            const Location(),
+            const Location1(), 
+            //ShowHideDemo(),
+          ],
+        ), 
        
 
       ]

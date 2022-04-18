@@ -11,7 +11,7 @@ class Vehicle extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text("My Vehicle", style: TextStyle( fontSize: 15, fontWeight: FontWeight.bold, color: Colors.black, decoration: TextDecoration.none),),
               Text("change", style: TextStyle( fontSize: 12, fontWeight: FontWeight.bold, color: Colors.blue, decoration: TextDecoration.none),),
             ],
@@ -22,23 +22,23 @@ class Vehicle extends StatelessWidget {
             child: Card( elevation: 2,
               child: Row(
                 children: [
-                  Align(alignment: Alignment.center),
-                  SizedBox(width: 70),
+                  const Align(alignment: Alignment.center),
+                  const SizedBox(width: 70),
                   Column( 
                       children: [
                         Image.asset('mycar.png', height: 70, width: 200,),
-                        Text('Mc Laren P1', style: TextStyle(fontWeight: FontWeight.bold), textAlign: TextAlign.end),
-                        SizedBox(height: 2),
+                        const Text('Mc Laren P1', style: TextStyle(fontWeight: FontWeight.bold), textAlign: TextAlign.end),
+                        const SizedBox(height: 2),
                         
                         Row( 
                          children: <Widget> [ 
-                        SizedBox(height: 10),
-                        Text('MY CAR',style: TextStyle(fontSize: 10, color: Colors.black, decoration: TextDecoration.none)),
-                        SizedBox(height: 10),
-                        Icon(Icons.brightness_1, size: 3), 
-                        SizedBox(height: 10),
+                        const SizedBox(height: 10),
+                        const Text('MY CAR',style: TextStyle(fontSize: 10, color: Colors.black, decoration: TextDecoration.none)),
+                        const SizedBox(height: 10),
+                        const Icon(Icons.brightness_1, size: 3), 
+                        const SizedBox(height: 10),
                         Container( width: 10), 
-                        Text('VFC 9917', style: TextStyle( fontSize: 10, decoration: TextDecoration.none)),
+                        const Text('VFC 9917', style: TextStyle( fontSize: 10, decoration: TextDecoration.none)),
                          ] 
                         )
                         

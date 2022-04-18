@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:smart_parking/features/parking/widgets/test1.dart';
 import 'package:smart_parking/features/payment/widgets/app_bar_payment.dart';
 import 'package:smart_parking/features/payment/widgets/bottom_bar.dart';
 import 'package:smart_parking/features/payment/widgets/promo_code.dart';
 import 'package:smart_parking/features/payment/widgets/selected_location.dart';
 import 'package:smart_parking/features/payment/widgets/parking_duration.dart';
+import 'package:smart_parking/features/payment/widgets/show_custom.dart';
 import 'package:smart_parking/features/payment/widgets/vehicle.dart';
 
 class PaymentScreen extends StatefulWidget {
@@ -18,18 +20,15 @@ class _PaymentScreenState extends State<PaymentScreen> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body:Container(
-           child: Column(
-             children: [
-               app_bar_payment(context),
-              SelectedLocation(),
-               ParkingDuration(),
-               Vehicle(),
-               PromoCode(),
-               
-             ],
-            )
-          ),
+        body:Column(
+          children: [
+            app_bar_payment(context),
+           const SelectedLocation(),
+            ParkingDuration(),
+            const Vehicle(),
+            const PromoCode(),
+          ],
+         ),
             bottomNavigationBar:bottomNavigationBar(),
         ),
     );

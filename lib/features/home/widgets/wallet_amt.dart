@@ -16,34 +16,34 @@ class Wallet extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.local_parking_rounded),
                       Text('Wallet'),
                     ],
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   Column(
-                    children: [
+                    children: const [
                       Text('RM'),
                     ],
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   Column(
-                    children: [
+                    children: const [
                       Text('46.00'),
                     ],
                   ),  
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
 
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.arrow_right),
                     ],
                   ), 
                   
-                  SizedBox(width: 20) 
+                  const SizedBox(width: 20) 
                 ],
               ),
             )

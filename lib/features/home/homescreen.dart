@@ -6,7 +6,6 @@ import 'package:smart_parking/features/home/widgets/notification.dart';
 import 'package:smart_parking/features/home/widgets/parking_ticket.dart';
 import 'package:smart_parking/features/home/widgets/services.dart';
 import 'package:smart_parking/features/home/widgets/wallet_reward.dart';
-import 'package:smart_parking/features/parking/parkingscreen.dart';
 
 class HomeScreen extends StatelessWidget {
 
@@ -19,6 +18,8 @@ class HomeScreen extends StatelessWidget {
         appBar: 
           app_bar_home( title:'SmartParking'),
         body: SafeArea(
+          
+          
           child: 
             Column(
               children: [
@@ -27,12 +28,14 @@ class HomeScreen extends StatelessWidget {
                 Services(),
                 News(),
                 ParkingTicket(),
-        
               ],
                
             ),
         ),
-        bottomNavigationBar: bottom_navbar_home(),
+        persistentFooterButtons: const 
+        [ NavBar(), 
+          
+          ]
       ),
     );
   }

@@ -23,7 +23,7 @@ class Location1 extends StatelessWidget {
                         children: [
                           Column(
                             crossAxisAlignment: CrossAxisAlignment.start,    
-                              children: [
+                              children: const [
                                 Text('Majlis Perbandaran Petaling Jaya', style: TextStyle(fontWeight: FontWeight.bold)),
                                 SizedBox(height: 10),
                                 Text('3 parking area',style: TextStyle(fontSize: 12.0)),
@@ -34,14 +34,14 @@ class Location1 extends StatelessWidget {
                  Expanded(child: Container( 
                    color: Colors.transparent, height: 10)),
 
-                   Container(child: IconButton(  
-                     icon: Icon(Icons.arrow_forward_ios,),
+                   IconButton(  
+                     icon: const Icon(Icons.arrow_forward_ios,),
                      onPressed: () { 
                        Navigator.push(context, MaterialPageRoute
                        (builder: (context) => PaymentScreen())
                        ); 
                      },
-                   ),)
+                   )
                 
       ],
     ),

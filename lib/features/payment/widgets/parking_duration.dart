@@ -13,7 +13,7 @@ class ParkingDuration extends StatelessWidget {
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
+            children: const [
               Text('Parking Duration',
                   style:
                       TextStyle(fontWeight: FontWeight.bold, fontSize: 20, color: Colors.black)),
@@ -27,68 +27,60 @@ class ParkingDuration extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Container(
-                child: FlatButton(
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      '1 hour',
-                      style: TextStyle(fontSize: 12.0),
-                    ),
+              FlatButton(
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    '1 hour',
+                    style: TextStyle(fontSize: 12.0),
                   ),
-                  color: Color.fromARGB(255, 218, 218, 218),
-                  onPressed: () {},
                 ),
+                color:const  Color.fromARGB(255, 218, 218, 218),
+                onPressed: () {},
               ),
-              Container(
-                child: FlatButton(
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      '2 hours',
-                      style: TextStyle(fontSize: 12.0),
-                    ),
+              FlatButton(
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    '2 hours',
+                    style: TextStyle(fontSize: 12.0),
                   ),
-                  color: Color.fromARGB(255, 218, 218, 218),
-                  onPressed: () {},
                 ),
+                color: const Color.fromARGB(255, 218, 218, 218),
+                onPressed: () {},
               ),
-              Container(
-                child: FlatButton(
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      '3 hours',
-                      style: TextStyle(fontSize: 12.0),
-                    ),
+              FlatButton(
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    '3 hours',
+                    style: TextStyle(fontSize: 12.0),
                   ),
-                  color: Color.fromARGB(255, 218, 218, 218),
-                  onPressed: () {},
                 ),
+                color: const Color.fromARGB(255, 218, 218, 218),
+                onPressed: () {},
               ),
-              Container(
-                child: FlatButton(
-                  child: Padding(
-                    padding: const EdgeInsets.all(10.0),
-                    child: Text(
-                      'Custom',
-                      style: TextStyle(fontSize: 12.0),
-                    ), 
-                  ),
-                  color: Color.fromARGB(255, 231, 211, 30),
-                  onPressed: () {
-                  }
+              FlatButton(
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text(
+                    'Custom',
+                    style: TextStyle(fontSize: 12.0),
+                  ), 
                 ),
+                color: const Color.fromARGB(255, 231, 211, 30),
+                onPressed: () {
+                }
               ),
-              SizedBox(height: 70),
+              const SizedBox(height: 70),
             ],
           ),
           
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              Padding(
-                padding: const EdgeInsets.all(8.0),
+            children: const [
+             Padding(
+                padding: EdgeInsets.all(8.0),
                 child: CounterButton(),
               ),
             ],
@@ -96,7 +88,7 @@ class ParkingDuration extends StatelessWidget {
           Padding(padding: const EdgeInsets.all(20.0),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: [  
+            children: const [  
               Text('or', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.black) )
             ],
           ),
@@ -105,7 +97,7 @@ class ParkingDuration extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text('One Day Parking (for Rm3.00) ', style: TextStyle(fontSize: 15, color: Colors.black)),
+              const Text('One Day Parking (for Rm3.00) ', style: TextStyle(fontSize: 15, color: Colors.black)),
               SwitchScreen()
               //Switch(),
             ],
@@ -114,12 +106,12 @@ class ParkingDuration extends StatelessWidget {
             Row(
               children: [
                     Expanded(
-                      child: Column(
-                        children: <Widget>[
-                          Divider(
+                      child: Column (
+                        children: const <Widget> [
+                           Divider(
                             height: 30.0,
                             thickness: 2,
-                            color: Color.fromARGB(255, 207, 206, 206)
+                            color:Color.fromARGB(255, 207, 206, 206)
                           )
                         ],
                       ),
@@ -135,7 +127,7 @@ class ParkingDuration extends StatelessWidget {
 
 class SwitchScreen extends StatefulWidget {  
   @override  
-  SwitchClass createState() => new SwitchClass();  
+  SwitchClass createState() => SwitchClass();  
 }  
   
 class SwitchClass extends State {  
@@ -165,10 +157,10 @@ class SwitchClass extends State {
             child: Switch(  
               onChanged: toggleSwitch,  
               value: isSwitched,  
-              activeColor: Color.fromARGB(255, 79, 84, 88),  
-              activeTrackColor: Color.fromARGB(255, 190, 190, 184),  
-              inactiveThumbColor: Color.fromARGB(255, 79, 84, 88),  
-              inactiveTrackColor: Color.fromARGB(255, 190, 190, 184),  
+              activeColor: const Color.fromARGB(255, 79, 84, 88),  
+              activeTrackColor:const  Color.fromARGB(255, 190, 190, 184),  
+              inactiveThumbColor:const  Color.fromARGB(255, 79, 84, 88),  
+              inactiveTrackColor:const  Color.fromARGB(255, 190, 190, 184),  
             )  
           ),  
         ]);  

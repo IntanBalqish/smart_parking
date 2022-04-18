@@ -8,16 +8,16 @@ class PromoCode extends StatelessWidget {
     return Card( 
       elevation: 0,
       child: Container( 
-        padding: EdgeInsets.all(20),
+        padding: const EdgeInsets.all(20),
         child: Column( 
           children: [ 
             Row( 
-              children: [ 
+              children: const [ 
                 Expanded(child: Text("Promo Code", 
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15, color: Colors.black, decoration: TextDecoration.none),))
               ],
             ), 
-            Padding(padding: EdgeInsets.all(5)),
+            const Padding(padding: EdgeInsets.all(5)),
             Row(children: [
               Expanded(child: TextField( 
                 decoration: InputDecoration( 
@@ -25,7 +25,7 @@ class PromoCode extends StatelessWidget {
                   filled: true, 
                   hintText: 'Enter your promo code', 
                   border: OutlineInputBorder(
-                    borderSide: BorderSide(color: Colors.white), 
+                    borderSide: const BorderSide(color: Colors.white), 
                     borderRadius: BorderRadius.circular(10)
                   ),
                 ),

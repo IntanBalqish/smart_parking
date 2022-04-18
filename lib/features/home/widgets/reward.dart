@@ -12,38 +12,38 @@ class Reward extends StatelessWidget {
           child: Card(
             child: 
             Padding(
-              padding: const EdgeInsets.all(5.0),
+              padding: const EdgeInsets.all(10.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.card_giftcard_rounded),
                       Text('Rewards'),
                     ],
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   Column(
-                    children: [
+                    children: const [
                       Text('110'),
                     ],
                   ),
-                  SizedBox(width: 5),
+                  const SizedBox(width: 5),
                   Column(
-                    children: [
+                    children: const [
                       Text('Points'),
                     ],
                   ),  
-                  SizedBox(width: 10),
+                  const SizedBox(width: 10),
 
                   Column(
-                    children: [
+                    children: const [
                       Icon(Icons.arrow_right),
                     ],
                   ), 
                   
-                  SizedBox(width: 20) 
+                  const SizedBox(width: 20) 
                 ],
               ),
             )

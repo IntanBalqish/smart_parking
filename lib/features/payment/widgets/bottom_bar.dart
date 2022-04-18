@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:smart_parking/features/home/homescreen.dart';
 
 class bottomNavigationBar extends StatelessWidget {
-  const bottomNavigationBar ({ Key? key }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -26,24 +25,24 @@ class bottomNavigationBar extends StatelessWidget {
                 child: Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)),
               ), 
              
-              Padding(
-                padding: const EdgeInsets.all(4.0),
+              const Padding(
+                padding:  EdgeInsets.all(4.0),
                 child: Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),),
               )
             ],
           ), 
-          SizedBox(width: 70),
+          const SizedBox(width: 70),
 
           Image.asset('boxP.png', height: 30, width: 50), 
 
-          Spacer(),
+          const Spacer(),
           Column( 
             children: [ 
               GestureDetector( onTap: () { showAlertDialog(context); 
               },
               child: Container( height: 50, width: 150, color: Colors.black,
               
-                child: Align( 
+                child: const Align( 
                   alignment: Alignment.center, 
                   child: Text('PAY', style: TextStyle(color: Colors.white)),
                   ),
@@ -61,15 +60,15 @@ void showAlertDialog(BuildContext context) {
   showDialog(context: context,
    builder: (BuildContext context) 
    { return CupertinoAlertDialog( 
-     title: Text("Payment Confirmation", style: TextStyle( fontWeight: FontWeight.bold),), 
-     content: Text("Are you sure with your payment?"), 
+     title: const Text("Payment Confirmation", style: TextStyle( fontWeight: FontWeight.bold),), 
+     content: const Text("Are you sure with your payment?"), 
      actions: [ 
-       CupertinoDialogAction(child: Text('Cancel'), 
+       CupertinoDialogAction(child: const Text('Cancel'), 
        onPressed: () { Navigator.of(context).pop();
        }
        ), 
        CupertinoDialogAction
-       (child: Text("Yes"), 
+       (child: const Text("Yes"), 
        onPressed: () { 
          Navigator.push(context, 
          MaterialPageRoute(builder: (context) => HomeScreen()));
@@ -86,8 +85,8 @@ void showSecond( BuildContext context) {
    showDialog(
       context: context,
       builder: (BuildContext context) => AlertDialog(
-        title: Icon(Icons.check_circle_outline, size: 80, color: Colors.green),
-        content: Text("Thank you for paying with us", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
+        title: const Icon(Icons.check_circle_outline, size: 80, color: Colors.green),
+        content: const Text("Thank you for paying with us", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),),
         actions: [
           Center(  
             child: Container(
