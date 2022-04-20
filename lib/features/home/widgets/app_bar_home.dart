@@ -3,13 +3,12 @@ import 'package:flutter/material.dart';
 AppBar app_bar_home ({String title = ''}) { 
 
   return AppBar( 
-    backgroundColor: Colors.black, 
+    centerTitle: true,
+    backgroundColor: Colors.black87, 
     title: Row( 
       mainAxisAlignment: MainAxisAlignment.center, 
       children: const [ 
-        Text(' SmartParking '), 
-        Icon(Icons.directions_car, 
-        color: Colors.yellow, size: 30), 
+        Text(' SmartParking \u{1f696}'), 
       ],
     ),
   );

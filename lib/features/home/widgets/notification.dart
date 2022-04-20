@@ -28,5 +28,3 @@ class Notify extends StatelessWidget {
     );
   }
 }
-
-//button tak siap lagi

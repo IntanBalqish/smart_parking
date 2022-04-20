@@ -12,41 +12,38 @@ class Services extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(children: [
-            Column(
-              children: [
-                GestureDetector(
-                  onTap: (){   
-                    Navigator.push(   
-                      context,
-                      MaterialPageRoute(builder: (context) => const ParkingScreen())
-                    );
-                  },
-                  child: 
-                    const CircleAvatar(
-                  radius: 20.0,
-                  backgroundImage:
-                    AssetImage('assets/parking.png'),
-                  backgroundColor: Colors.transparent,
-                ),
-
-                ),
-                const Text('Parking'),
-                const Text(''),
-
-                const SizedBox(height: 15),
-  
-                const CircleAvatar(
-                  radius: 20.0,
-                  backgroundImage:
-                    AssetImage('assets/officer.png'),
-                      backgroundColor: Colors.transparent,
-                ),
-                const Text('Officer'),
-                const Text('Spotted'),
-              ],
-            )
-          ]
+          GestureDetector( 
+            onTap: () {   
+              Navigator.push(
+                context, MaterialPageRoute (builder: (context) => const ParkingScreen())
+                );
+            },
+            child: Row(children: [
+              Column(
+                children: const [
+                       CircleAvatar(
+                    radius: 20.0,
+                    backgroundImage:
+                      AssetImage('assets/parking.png'),
+                    backgroundColor: Colors.transparent,
+                  ),
+                  Text('Parking'),
+                  Text(''),
+          
+                  SizedBox(height: 15),
+            
+                  CircleAvatar(
+                    radius: 20.0,
+                    backgroundImage:
+                      AssetImage('assets/officer.png'),
+                        backgroundColor: Colors.transparent,
+                  ),
+                  Text('Officer'),
+                  Text('Spotted'),
+                ],
+              )
+            ]
+            ),
           ),
           Row(children: [
             Column(

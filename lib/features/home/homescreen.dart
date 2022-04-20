@@ -13,13 +13,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(  
       debugShowCheckedModeBanner: false,
-      title: 'SmartParking',
+      title: 'Smart Parking',
       home: Scaffold(  
-        appBar: 
-          app_bar_home( title:'SmartParking'),
+         appBar: 
+           app_bar_home( title:'SmartParking'),
         body: SafeArea(
-          
-          
           child: 
             Column(
               children: [
@@ -29,13 +27,11 @@ class HomeScreen extends StatelessWidget {
                 News(),
                 ParkingTicket(),
               ],
-               
             ),
         ),
-        persistentFooterButtons: const 
-        [ NavBar(), 
-          
-          ]
+        // persistentFooterButtons: const 
+        // [ NavBar(), 
+        //   ]
       ),
     );
   }

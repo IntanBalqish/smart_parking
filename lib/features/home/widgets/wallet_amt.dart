@@ -42,7 +42,6 @@ class Wallet extends StatelessWidget {
                       Icon(Icons.arrow_right),
                     ],
                   ), 
-                  
                   const SizedBox(width: 20) 
                 ],
               ),

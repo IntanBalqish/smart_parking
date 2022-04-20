@@ -21,17 +21,17 @@ class bottomNavigationBar extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start, 
             children: [ 
               Padding(
-                padding: const EdgeInsets.all(4.0),
-                child: Text('Total payment', style: TextStyle( fontSize: 15, decoration: TextDecoration.none, color: Colors.grey.shade800)),
+                padding: const EdgeInsets.only(left: 8.0, top: 5),
+                child: Text('Total payment', style: TextStyle( fontSize: 18, color: Colors.grey.shade800)),
               ), 
              
               const Padding(
-                padding:  EdgeInsets.all(4.0),
-                child: Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 10, decoration: TextDecoration.none),),
+                padding:  EdgeInsets.only(left: 8.0),
+                child: Text('RM 46.00', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold, fontSize: 13),),
               )
             ],
           ), 
-          const SizedBox(width: 70),
+          const SizedBox(width: 50),
 
           Image.asset('boxP.png', height: 30, width: 50), 
 

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:smart_parking/features/activity/activity_screen.dart';
 import 'package:smart_parking/features/home/homescreen.dart';
-import 'package:smart_parking/features/parking/parkingscreen.dart';
-import 'package:smart_parking/features/payment/paymentscreen.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({ Key? key }) : super(key: key);
@@ -15,14 +14,17 @@ class _NavBarState extends State<NavBar> {
 
   int _isSelected = 0; //if value 2, highlighted akan pergi ke wwallet
 
+  final List <bool> _animByPages = [false, false, false, false, false];
+  List <bool> modifiedPages = [];
+
   final List<BottomNavItem> _listBottomNavItems =  [
     BottomNavItem(title:'Home', icon:Icons.home, page: HomeScreen()),
-    BottomNavItem(title:'Activity', icon:Icons.receipt, page: ParkingScreen()),
+    BottomNavItem(title:'Activity', icon:Icons.receipt, page: ActivityScreen()),
     BottomNavItem(title:'Wallet', icon:Icons.credit_card, page: HomeScreen()),
     BottomNavItem(title:'Notification', icon:Icons.notifications, page: HomeScreen()),
     BottomNavItem(title:'Settings', icon:Icons.person, page: HomeScreen()),
-    
   ];
+
 
   @override
   Widget build(BuildContext context) {

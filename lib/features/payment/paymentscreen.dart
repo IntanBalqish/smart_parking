@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:smart_parking/features/parking/widgets/test1.dart';
 import 'package:smart_parking/features/payment/widgets/app_bar_payment.dart';
 import 'package:smart_parking/features/payment/widgets/bottom_bar.dart';
 import 'package:smart_parking/features/payment/widgets/promo_code.dart';
 import 'package:smart_parking/features/payment/widgets/selected_location.dart';
 import 'package:smart_parking/features/payment/widgets/parking_duration.dart';
-import 'package:smart_parking/features/payment/widgets/show_custom.dart';
 import 'package:smart_parking/features/payment/widgets/vehicle.dart';
 
 class PaymentScreen extends StatefulWidget {
